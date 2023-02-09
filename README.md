@@ -21,7 +21,7 @@ You can also fork the repository and install the package in editable mode.
 ## How to use backuppy?
 If you have installed backuppy, you can use it in your Python scripts. 
 For example :
-* Double tap on the file `backup.py` in the folder `src` to run the script
+* Double tap on the file `backup.py` to run the script
 * An explorer window will open, where you can select the folder you want to backup
 * A second explorer window will open, where you can select the folder where you want to save the backup
 * 2 output in the cmd output : 
