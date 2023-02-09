@@ -2,7 +2,6 @@ import tkinter
 from tkinter import filedialog
 import os 
 import shutil
-import tqdm
 
 def parcourir(src = True) : 
     """
