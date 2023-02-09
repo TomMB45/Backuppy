@@ -1,6 +1,11 @@
 # Backuppy
 ### Tools for automatic backup 
 
+[![Documentation][badge-docs]][link-docs]
+
+[badge-docs]: https://img.shields.io/readthedocs/Backup_py
+[link-docs]: https://backuppy.readthedocs.io/en/latest/
+
 ## What is backuppy?
 Backuppy is a Python package that provides tools for automatic backup. It is designed to be used in a cronjob or similar.
 
@@ -8,7 +13,7 @@ Backuppy is a Python package that provides tools for automatic backup. It is des
 ## Installation
 You require Python 3.8 or newer installed on your system. In case you do not have Python installed, we recommend installing Miniconda `<https://docs.conda.io/en/latest/miniconda.html>`.
 
-To use backuppy, you can download the [code](https://github.com/TomMB45/Backuppy/archive/refs/heads/main.zip)
+To use backup, you can download the [code](https://github.com/TomMB45/Backuppy/archive/refs/heads/main.zip)
 
 To install the latest development version :
 ``` bash
@@ -20,8 +25,8 @@ You can also fork the repository and install the package in editable mode.
 
 ## How to use backuppy?
 If you have installed backuppy, you can use it in your Python scripts. 
-For example :
-* Double tap on the file `backup.py` to run the script
+For example:
+* Double-tap on the file `backup.py` to run the script
 * An explorer window will open, where you can select the folder you want to backup
 * A second explorer window will open, where you can select the folder where you want to save the backup
 * 2 output in the cmd output : 

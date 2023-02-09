@@ -25,7 +25,6 @@ version = info["Version"]
 # The full version, including alpha/beta/rc tags
 release = info["Version"]
 
-bibtex_bibfiles = ["references.bib"]
 templates_path = ["_templates"]
 nitpicky = True  # Warn about broken links
 needs_sphinx = "4.0"
@@ -50,7 +49,6 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinxcontrib.bibtex",
     "sphinx_autodoc_typehints",
-    "scanpydoc.definition_list_typed_field",
     "nbsphinx",
     "sphinx.ext.mathjax",
     *[p.stem for p in (HERE / "extensions").glob("*.py")],
