@@ -39,16 +39,25 @@ def check_folder(src_folder_path, dest_folder_path) :
     """
     files = os.listdir(src_folder_path)
     for file in files :
+
         if os.path.isfile(os.path.join(src_folder_path, file)) :
             ## Check if the file already exists and if the metadata are the same (os.path.getctime)
-            shutil.copy2(os.path.join(src_folder_path, file), os.path.join(dest_folder_path, file))
-            print(file, "copied")
+            if os.path.exists(os.path.join(dest_folder_path, file)) and os.path.getmtime(os.path.join(src_folder_path, file)) == os.path.getmtime(os.path.join(dest_folder_path, file)) :
+                print(file, "already exists and will not be copied")
+                continue
+
+            else : 
+                shutil.copy2(os.path.join(src_folder_path, file), os.path.join(dest_folder_path, file))
+                print(file, "copied")
+
         else : 
-            os.mkdir(os.path.join(dest_folder_path, file))
-            # print(os.path.join(dest_folder_path, file))
+            if not os.path.exists(os.path.join(dest_folder_path, file)) :
+                os.mkdir(os.path.join(dest_folder_path, file))
             check_folder(os.path.join(src_folder_path, file), os.path.join(dest_folder_path, file))
 
 if __name__ == "__main__" :
     src_folder = parcourir()
     dest_folder = parcourir(src=False)
     check_folder(src_folder_path=src_folder, dest_folder_path=dest_folder)
+
+# print(os.path.getctime(os.path.join(os.getcwd(), "src\\test.py")))
