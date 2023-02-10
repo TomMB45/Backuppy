@@ -1,10 +1,10 @@
 # Backuppy
 ### Tools for automatic backup 
 
-[![Documentation][badge-docs]][link-docs]
+<!-- [![Documentation][badge-docs]][link-docs]
 
 [badge-docs]: https://img.shields.io/readthedocs/Backup_py
-[link-docs]: https://backuppy.readthedocs.io/en/latest/
+[link-docs]: https://backuppy.readthedocs.io/en/latest/ -->
 
 ## What is backuppy?
 Backuppy is a Python package that provides tools for automatic backup. It is designed to be used in a cronjob or similar.
